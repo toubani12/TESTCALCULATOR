@@ -36,7 +36,7 @@ public class CalculatorTest {
     void testDivByZero() {
         ArithmeticException ex = assertThrows(
                 ArithmeticException.class,
-                () -> calculator.div(10, 0),
+                () -> calculator.div(90, 0),
                 "Diviser par zéro doit lancer ArithmeticException"
         );
         assertEquals("Division par zéro n'est pas autorisée", ex.getMessage());
